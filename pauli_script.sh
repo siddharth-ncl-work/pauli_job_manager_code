@@ -59,3 +59,5 @@ then
   echo 'TOTAL JOBS = '$job_count
   nohup python -u manager.py $keep_running $job_count $job_list $job_type | tee output/output.log &
 fi
+
+#waiting for working status from others
